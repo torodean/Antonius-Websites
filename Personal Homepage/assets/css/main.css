@@ -32,6 +32,11 @@ p {
     margin-bottom: 25px;
 }
 
+li {
+    color: silver;
+    text-align: left;
+}
+
 .centered {
     text-align: center;
 }
