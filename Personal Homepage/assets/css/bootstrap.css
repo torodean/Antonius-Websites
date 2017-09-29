@@ -442,6 +442,10 @@ cite {
   text-align: left;
 }
 
+.text-indent {
+  text-indent: 50 px;
+}
+
 .text-right {
   text-align: right;
 }
