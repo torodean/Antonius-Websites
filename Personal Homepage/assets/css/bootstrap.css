@@ -442,6 +442,11 @@ cite {
   text-align: left;
 }
 
+.text-justify {
+  text-align: justify;
+  color: #D7D7D7;
+}
+
 .text-indent {
   text-indent: 50 px;
 }
