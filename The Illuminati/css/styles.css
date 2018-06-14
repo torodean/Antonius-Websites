@@ -1020,6 +1020,11 @@ ul#model-feats {
   list-style: none;
   padding: 0;
   color: #ad835a; }
+  
+ul#model-centered {
+  text-align: center;
+  list-style: none;
+  color: #ad835a; }
 
 .Video-corner {
   background: url(../img/item-border-sprite.png) 0 0 no-repeat;
