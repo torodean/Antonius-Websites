@@ -1290,13 +1290,14 @@ ul#model-centered {
 .contact-form .row {
   padding: 0.25rem 0; }
 
-#gmaps {
+#imaps {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25)), url(../img/map.jpg);
   border: 1px solid #62351f;
   box-shadow: 0px 0px 50px -15px rgba(0, 0, 0, 0.95);
   height: 24rem;
   margin-top: 1rem; }
   @media (min-width: 992px) {
-    #gmaps {
+    #imaps {
       margin-top: 0; } }
 
 /*------------------------------------------------------------------
