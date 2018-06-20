@@ -400,7 +400,7 @@
                             <section class="col-md-4">
                                 <cite><img src="img/tamina.jpg" alt="Tamina"></cite>
                                 <blockquote>
-                                    If I continually stand in fire, the healers will get better. Even better, let's play oom the healer!
+                                    If I continually stand in fire, the healers will get better. Actually, let's play oom the healer!
                                 </blockquote>
                                 <p>
                                     <strong>Tamina</strong>, Tank
@@ -442,13 +442,13 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
-                                <form action="#" method="post" class="contact-form">
+                                <form action="contact.php" method="post" class="contact-form">
                                     <div class="row">
                                         <div class="col-sm-4 label-container">
                                             <label for="name">Name: </label>
                                         </div>
                                         <div class="col-sm-8">
-                                            <input type="text" name="name" id="name" required>
+                                            <input type="text" name="cf_name" id="name" required>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -456,7 +456,7 @@
                                             <label for="email">Email: </label>
                                         </div>
                                         <div class="col-sm-8">
-                                            <input type="email" name="email" id="email" required>
+                                            <input type="email" name="cf_email" id="email" required>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -464,7 +464,7 @@
                                             <label>Reason: </label>
                                         </div>
                                         <div class="col-sm-8">
-                                            <select class="form-control">
+                                            <select name="cf_reason" class="form-control">
                                                 <option selected>Recruitment</option>
                                                 <option>Submit Issue</option>
                                                 <option>Testimonial</option>
@@ -477,7 +477,7 @@
                                             <label>You found us: </label>
                                         </div>
                                         <div class="col-sm-8">
-                                            <select class="form-control">
+                                            <select name="cf_found" class="form-control">
                                                 <option selected>Search Engine</option>
                                                 <option>Friend</option>
                                                 <option>Advertisement</option>
@@ -505,7 +505,7 @@
                                             <label>Message:</label>
                                         </div>
                                         <div class="col-sm-8">
-                                            <textarea placeholder="Your message..."></textarea>
+                                            <textarea name="cf_message" placeholder="Your message..."></textarea>
                                         </div>
                                     </div>
                                     <div class="row">
