@@ -22,8 +22,7 @@ h2 {
 	}
 }
 
-html,
-body {
+html, body {
 	color: #ede0c2;
 	font-size: 15px;
 	font-family: "Cinzel Decorative", "Palatino Light", Times, Times New Roman, Georgia, serif;
@@ -31,8 +30,7 @@ body {
 	text-rendering: optimizeLegibility;
 }
 @media (min-width: 768px) {
-	html,
-	body {
+	html, body {
 		font-size: 16px !important;
 		padding-right: 0px !important;
 	}
@@ -44,7 +42,7 @@ section {
 /* BG color of the navbar */
 .navbar-custom {
 	background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.75));
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 	z-index: 3; 
 }
 
@@ -113,30 +111,32 @@ a.navbar-logo:hover {
 	background-color: transparent !important;
 	color: #ffffff !important;
 }
-.collapsing .plain-link a,
-.in .plain-link a {
+.collapsing .plain-link a, .in .plain-link a {
 	text-align: center;
 }
 
 /* Dropdown menu settings */
 .dropdown {
+	font-family: Helvetica, Arial, sans-serif;
     position: relative;
     display: inline-block;
+	padding: 15px 10px 15px 10px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #262525;
-    min-width: 160px;
+	top: 48px;
+    background-color: rgba(38, 37, 37,.85);
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 5px 5px;
     z-index: 1;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Code for formatting hte header */
+/* Code for formatting the header */
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.05)), url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
@@ -161,7 +161,7 @@ header {
 	}
 }
 
-/* Code for fomatting hte big logo */
+/* Code for fomatting the big logo */
 .big-logo {
 	height: auto;
 	position: absolute;
@@ -203,7 +203,7 @@ header {
 	}
 }
 
-/* Code to defien hte divider */
+/* Code to defien the divider */
 .Divider {
 	height: 55px;
 	margin: -18px -15px;
