@@ -21,6 +21,18 @@ h2 {
 		font-size: 190%;
 	}
 }
+.text-align-left {
+	text-align: left;
+}
+.text-align-right {
+	text-align: right;
+}
+.text-align-justify {
+	text-align: justify;
+}
+.text-align-center {
+	text-align: center;
+}
 
 html, body {
 	color: #ede0c2;
@@ -330,4 +342,353 @@ header {
 }
 .fa-instagram {
   color: #c4ae78;
+}
+
+/* Resume section */
+.resumeCV {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(../img/backgrounds-hd-desktop-1302t5bxw-1s-1920x1080.jpg);
+     background-size: cover;
+     background-position: center center;
+     box-shadow: inset 0 -10px 50px #000000;
+     color: #ffffff;
+}
+ @media (max-width: 768px) {
+     .resumeCV section {
+         text-align: center;
+    }
+}
+ @media (min-width: 1200px) {
+     .resumeCV {
+         background-attachment: fixed;
+    }
+}
+ .resumeCV cite {
+     display: block;
+     margin-top: 10px;
+     text-align: center;
+}
+ .resumeCV cite img {
+     margin: 15px 15px 0 0;
+     border: 1px solid #752b1a;
+     height: auto;
+     width: 50%;
+     display: inline-block;
+     box-shadow: 0 0 10px #000000;
+}
+ .resumeCV p {
+     color: #ecd19a;
+     font-size: 16px;
+     height: 32px;
+     line-height: 32px;
+     text-transform: uppercase;
+     font-family: Helvetica, Arial, sans-serif;
+     text-align: center;
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+     .resumeCV p {
+         font-size: 18px;
+    }
+}
+ @media (min-width: 768px) {
+     .resumeCV p {
+         font-size: 18px;
+    }
+}
+ @media (max-width: 320px) {
+     .resumeCV p {
+         font-size: 16px;
+    }
+}
+ .resumeCV blockquote {
+     border: none;
+     color: #fffcd9;
+     font-family: "Palatino Light", Times, Times New Roman, Georgia, serif;
+     font-size: 20px;
+     line-height: 30px;
+     margin-top: 1rem;
+     text-align: center;
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+     .resumeCV blockquote {
+         font-size: 18px;
+         line-height: 27px;
+    }
+}
+ @media (max-width: 768px) {
+     .resumeCV blockquote {
+         width: 75%;
+         display: inline-block;
+    }
+}
+ @media (max-width: 320px) {
+     .resumeCV blockquote {
+         width: 100%;
+         font-size: 18px;
+    }
+}
+ .resumeCV blockquote:before {
+     content: '\201c';
+     font-weight: 100;
+     position: absolute;
+}
+ @media (max-width: 480px) {
+     .resumeCV blockquote:before {
+         display: none;
+    }
+}
+ @media (min-width: 768px) {
+     .resumeCV blockquote:before {
+         font-size: 250%;
+         -webkit-transform: translate(-150%, 50%);
+         -moz-transform: translate(-150%, 50%);
+         -ms-transform: translate(-150%, 50%);
+         -o-transform: translate(-150%, 50%);
+         transform: translate(-150%, 50%);
+    }
+}
+ .resumeCV blockquote:after {
+     content: '\201d';
+     font-weight: 100;
+     position: absolute;
+}
+ @media (max-width: 480px) {
+     .resumeCV blockquote:after {
+         display: none;
+    }
+}
+ @media (min-width: 768px) {
+     .resumeCV blockquote:after {
+         font-size: 250%;
+         -webkit-transform: translate(50%, 50%);
+         -moz-transform: translate(50%, 50%);
+         -ms-transform: translate(50%, 50%);
+         -o-transform: translate(50%, 50%);
+         transform: translate(50%, 50%);
+    }
+}
+
+.separator {
+	background: url(../img/blog-separator.png) 50% 100% no-repeat;
+	position: relative; 
+}
+
+/* General information formatting */
+.information {
+     padding-top: 20px;
+}
+ .information-img {
+     width: 100%;
+     border: 1px solid;
+     opacity: 0.5;
+     transition: all 0.5s;
+     box-shadow: 0px 0px 25px 0px #000000;
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+     .information-img {
+         opacity: 1;
+    }
+}
+ @media (max-width: 768px) {
+     .information-img {
+         opacity: 1;
+    }
+}
+ .information-item .item-name-caption {
+     background-color: #000000;
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+     top: 0;
+     border-radius: 0px;
+     left: 0;
+     display: none;
+}
+ .information-item:hover .information-img {
+     opacity: 1;
+     border: 1px solid #9d9280;
+     box-shadow: 0px 0px 25px 0px #37271b;
+}
+ .information-item:hover h3 {
+     text-shadow: 0px 0px 4px #383838;
+}
+ .information-item:hover .information-p {
+     color: #9d9280;
+}
+ .information-item-hierarchy .item-name-caption {
+     background-color: #000000;
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+     top: 0;
+     border-radius: 0px;
+     left: 0;
+     display: none;
+}
+ .information-item-hierarchy:hover .information-img {
+     opacity: 1;
+     border: 1px solid #9d9280;
+     box-shadow: 0px 0px 25px 0px #37271b;
+}
+ .information-item-hierarchy:hover h3 {
+     text-shadow: 0px 0px 4px #383838;
+}
+ .information-item-hierarchy:hover .information-p {
+     color: #9d9280;
+}
+ .information-item-perks .item-name-caption {
+     background-color: #000000;
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+     top: 0;
+     border-radius: 0px;
+     left: 0;
+     display: none;
+}
+ .information-item-perks:hover .information-img {
+     opacity: 1;
+     border: 1px solid #9d9280;
+     box-shadow: 0px 0px 25px 0px #37271b;
+}
+ .information-item-perks:hover h3 {
+     text-shadow: 0px 0px 4px #383838;
+}
+ .information-item-perks:hover .information-p {
+     color: #9d9280;
+}
+ .information-p {
+     font-family: Helvetica, Arial, sans-serif;
+     color: #71675b;
+     font-size: 0.85em;
+     text-align: left;
+     transition: all 0.5s;
+     font-weight: 400;
+     line-height: 1.4rem;
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+     .information-p {
+         font-size: 0.8em;
+    }
+}
+ @media (max-width: 320px) {
+     .information-p {
+         font-size: 0.9rem;
+    }
+}
+
+/* Experience section */
+.experience {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(../img/earth.png);
+     background-size: cover;
+     background-position: center center;
+     box-shadow: inset 0 -10px 50px #000000;
+     color: #ffffff;
+}
+ @media (max-width: 768px) {
+     .experience section {
+         text-align: center;
+    }
+}
+ @media (min-width: 1200px) {
+     .experience {
+         background-attachment: fixed;
+    }
+}
+ .experience cite {
+     display: block;
+     margin-top: 10px;
+     text-align: center;
+}
+ .experience cite img {
+     margin: 15px 15px 0 0;
+     border: 1px solid #752b1a;
+     height: auto;
+     width: 50%;
+     display: inline-block;
+     box-shadow: 0 0 10px #000000;
+}
+ .experience p {
+     color: #ecd19a;
+     font-size: 16px;
+     height: 32px;
+     line-height: 32px;
+     text-transform: uppercase;
+     font-family: Helvetica, Arial, sans-serif;
+     text-align: center;
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+     .experience p {
+         font-size: 18px;
+    }
+}
+ @media (min-width: 768px) {
+     .experience p {
+         font-size: 18px;
+    }
+}
+ @media (max-width: 320px) {
+     .experience p {
+         font-size: 16px;
+    }
+}
+ .experience blockquote {
+     border: none;
+     color: #fffcd9;
+     font-family: "Palatino Light", Times, Times New Roman, Georgia, serif;
+     font-size: 20px;
+     line-height: 30px;
+     margin-top: 1rem;
+     text-align: center;
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+     .experience blockquote {
+         font-size: 18px;
+         line-height: 27px;
+    }
+}
+ @media (max-width: 768px) {
+     .experience blockquote {
+         width: 75%;
+         display: inline-block;
+    }
+}
+ @media (max-width: 320px) {
+     .experience blockquote {
+         width: 100%;
+         font-size: 18px;
+    }
+}
+ .experience blockquote:before {
+     content: '\201c';
+     font-weight: 100;
+     position: absolute;
+}
+ @media (max-width: 480px) {
+     .experience blockquote:before {
+         display: none;
+    }
+}
+ @media (min-width: 768px) {
+     .experience blockquote:before {
+         font-size: 250%;
+         -webkit-transform: translate(-150%, 50%);
+         -moz-transform: translate(-150%, 50%);
+         -ms-transform: translate(-150%, 50%);
+         -o-transform: translate(-150%, 50%);
+         transform: translate(-150%, 50%);
+    }
+}
+ .experience blockquote:after {
+     content: '\201d';
+     font-weight: 100;
+     position: absolute;
+}
+ @media (max-width: 480px) {
+     .experience blockquote:after {
+         display: none;
+    }
+}
+ @media (min-width: 768px) {
+     .experience blockquote:after {
+         font-size: 250%;
+         -webkit-transform: translate(50%, 50%);
+         -moz-transform: translate(50%, 50%);
+         -ms-transform: translate(50%, 50%);
+         -o-transform: translate(50%, 50%);
+         transform: translate(50%, 50%);
+    }
 }
