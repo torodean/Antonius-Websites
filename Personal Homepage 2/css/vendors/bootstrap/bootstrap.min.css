@@ -3741,6 +3741,11 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 	padding-left: 0;
 	list-style: none
 }
+@media (max-width: 480px){
+	.nav {
+		margin: auto;
+	}
+}
 
 .nav>li {
 	position: relative;

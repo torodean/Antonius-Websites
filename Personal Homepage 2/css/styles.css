@@ -30,6 +30,17 @@ h2 {
 .text-align-justify {
 	text-align: justify;
 }
+@media (max-width: 768px) {
+	.text-align-justify{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
 .text-align-center {
 	text-align: center;
 }
@@ -78,6 +89,19 @@ a.navbar-logo:hover {
 	background-position: 0px -50px; 
 }
 
+.custom-toggle-btn {
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: none;
+	right: 5px;
+	top: -1px;
+	position: absolute; 
+}
+.custom-toggle-btn .icon-bar {
+	margin: -5px -11px 6px 0px;
+	height: 3px;
+	width: 30px;
+	background-color: #ecd19a !important; 
+}
 
 .plain-link {
 	font-family: Helvetica, Arial, sans-serif;
@@ -134,6 +158,11 @@ a.navbar-logo:hover {
     display: inline-block;
 	padding: 15px 10px 15px 10px;
 }
+@media (max-width: 480px){
+	.dropdown {
+		text-align: center;
+	}
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -143,6 +172,12 @@ a.navbar-logo:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 5px 5px;
     z-index: 1;
+}
+@media (max-width: 480px){
+	.dropdown-content {
+		text-align: center;
+		border: 1px solid #9d9280;
+	}
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -488,26 +523,26 @@ header {
          opacity: 1;
     }
 }
- @media (max-width: 768px) {
-     .information-img {
+@media (max-width: 768px) {
+	.information-img {
          opacity: 1;
     }
 }
- .information-item .item-name-caption {
-     background-color: #000000;
-     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-     top: 0;
-     border-radius: 0px;
-     left: 0;
-     display: none;
+.information-item .item-name-caption {
+	background-color: #000000;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+	top: 0;
+	border-radius: 0px;
+	left: 0;
+	display: none;
 }
- .information-item:hover .information-img {
-     opacity: 1;
-     border: 1px solid #9d9280;
-     box-shadow: 0px 0px 25px 0px #37271b;
+.information-item:hover .information-img {
+	opacity: 1;
+	border: 1px solid #9d9280;
+	box-shadow: 0px 0px 25px 0px #37271b;
 }
- .information-item:hover h3 {
-     text-shadow: 0px 0px 4px #383838;
+.information-item:hover h3 {
+	text-shadow: 0px 0px 4px #383838;
 }
  .information-item:hover .information-p {
      color: #9d9280;
@@ -691,4 +726,8 @@ header {
          -o-transform: translate(50%, 50%);
          transform: translate(50%, 50%);
     }
+}
+
+.menu {
+	display: none;
 }
