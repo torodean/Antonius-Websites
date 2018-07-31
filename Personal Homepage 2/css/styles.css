@@ -160,7 +160,7 @@ a.navbar-logo:hover {
 }
 @media (max-width: 480px){
 	.dropdown {
-		text-align: center;
+		text-align: center;		
 	}
 }
 .dropdown-content {
@@ -176,7 +176,9 @@ a.navbar-logo:hover {
 @media (max-width: 480px){
 	.dropdown-content {
 		text-align: center;
+		padding: none;
 		border: 1px solid #9d9280;
+		left: 25%;
 	}
 }
 .dropdown:hover .dropdown-content {
