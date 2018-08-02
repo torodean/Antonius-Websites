@@ -47,8 +47,9 @@ h3 {
 	}
 }
 
-.position-thirds {
-	
+.squished {
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .hidden {
@@ -295,7 +296,7 @@ header {
 	}
 }
 
-/* Code to defien the divider */
+/* Code to define the divider */
 .Divider {
 	height: 55px;
 	margin: -18px -15px;
@@ -306,7 +307,7 @@ header {
 	left: 0;
 	margin-right: 82px;
 	right: 50%;
-	background: url(../img/divider-sprite.png) repeat-x 50% 0;
+	background: url(../img/divider-sprite-duel.png) repeat-x 50% 0;
 	content: "";
 	height: 55px;
 	position: absolute;
@@ -316,14 +317,14 @@ header {
 	left: 50%;
 	margin-left: 82px;
 	right: 0;
-	background: url(../img/divider-sprite.png) repeat-x 50% 0;
+	background: url(../img/divider-sprite-duel.png) repeat-x 50% 0;
 	content: "";
 	height: 55px;
 	position: absolute;
 	top: 0;
 }
 .Divider-rule {
-	background: url(../img/divider-sprite.png) repeat-x 50% 100%;
+	background: url(../img/divider-sprite-duel.png) repeat-x 50% 100%;
 	border: 0;
 	height: 55px;
 	left: 50%;
@@ -457,12 +458,8 @@ header {
 }
  .resumeCV p {
      color: #ecd19a;
-     font-size: 16px;
-     height: 32px;
      line-height: 32px;
-     text-transform: uppercase;
      font-family: Helvetica, Arial, sans-serif;
-     text-align: center;
 }
  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
      .resumeCV p {
@@ -806,6 +803,25 @@ header {
 }
 @media (max-width: 768px) {
 	.features-img {
+		opacity: 1; 
+	} 
+}
+
+.resume-img {
+	width: 100%;
+	opacity: 0.5;
+	transition: all 0.5s;
+}
+.resume-img:hover{
+	opacity: 1;
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+	.resume-img {
+		opacity: 1; 
+	}
+}
+@media (max-width: 768px) {
+	.resume-img {
 		opacity: 1; 
 	} 
 }
