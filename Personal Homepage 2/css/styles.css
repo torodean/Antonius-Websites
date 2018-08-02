@@ -31,6 +31,39 @@ h3 {
 .small-h3 {
 	font-size: 130%;
 }
+@media (max-width: 768px) {
+	.text-align-justify{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* some button editions */
+.button-pad {
+	padding-top: 5px;
+}
+.home-button {
+	color: #303030;
+	background-color: #c4ae78;
+	border-color: #000;
+}
+.home-button:hover {
+	color: #565656;
+	background-color: #f2cd71;
+	border-color: #ffc230;
+}
+
+/* Some various style features */
+.squished {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.hidden {
+	display: none;
+}
+.text-align-center {
+	text-align: center;
+}
 .text-align-left {
 	text-align: left;
 }
@@ -39,25 +72,6 @@ h3 {
 }
 .text-align-justify {
 	text-align: justify;
-}
-@media (max-width: 768px) {
-	.text-align-justify{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
-
-.squished {
-	padding-left: 25px;
-	padding-right: 25px;
-}
-
-.hidden {
-	display: none;
-}
-
-.text-align-center {
-	text-align: center;
 }
 
 html, body {
@@ -253,6 +267,23 @@ header {
 		width: 85%; 
 	} 
 }
+.resumeCV-section {
+	margin: 1rem 1rem 0 auto;
+	width: 80%;
+}
+@media (max-width: 960px) {
+	.resumeCV-section {
+		margin: 1rem auto 0 auto;
+	}
+}
+.resumeCV-image {
+	margin: 1rem auto 0 1rem;
+}
+@media (max-width: 960px) {
+	.resumeCV-image {
+		margin: 1rem auto 0 auto;
+	}
+}
 
 /* Code for fomatting the big logo */
 .big-logo {
@@ -427,122 +458,36 @@ header {
 
 /* Resume section */
 .resumeCV {
-     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(../img/backgrounds-hd-desktop-1302t5bxw-1s-1920x1080.jpg);
-     background-size: cover;
-     background-position: center center;
-     box-shadow: inset 0 -10px 50px #000000;
-     color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(../img/backgrounds-hd-desktop-1302t5bxw-1s-1920x1080.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 -10px 50px #000000;
+    color: #ffffff;
 }
- @media (max-width: 768px) {
-     .resumeCV section {
-         text-align: center;
+@media (max-width: 768px) {
+    .resumeCV section {
+        text-align: center;
     }
 }
- @media (min-width: 1200px) {
-     .resumeCV {
-         background-attachment: fixed;
+@media (min-width: 1200px) {
+    .resumeCV {
+        background-attachment: fixed;
     }
 }
- .resumeCV cite {
-     display: block;
-     margin-top: 10px;
-     text-align: center;
+.resumeCV cite {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
 }
- .resumeCV cite img {
-     margin: 15px 15px 0 0;
-     border: 1px solid #752b1a;
-     height: auto;
-     width: 50%;
-     display: inline-block;
-     box-shadow: 0 0 10px #000000;
+.resumeCV cite img {
+    margin: 15px 15px 0 0;
+    border: 1px solid #752b1a;
+    height: auto;
+    width: 50%;
+    display: inline-block;
+    box-shadow: 0 0 10px #000000;
 }
- .resumeCV p {
-     color: #ecd19a;
-     line-height: 32px;
-     font-family: Helvetica, Arial, sans-serif;
-}
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-     .resumeCV p {
-         font-size: 18px;
-    }
-}
- @media (min-width: 768px) {
-     .resumeCV p {
-         font-size: 18px;
-    }
-}
- @media (max-width: 320px) {
-     .resumeCV p {
-         font-size: 16px;
-    }
-}
- .resumeCV blockquote {
-     border: none;
-     color: #fffcd9;
-     font-family: "Palatino Light", Times, Times New Roman, Georgia, serif;
-     font-size: 20px;
-     line-height: 30px;
-     margin-top: 1rem;
-     text-align: center;
-}
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-     .resumeCV blockquote {
-         font-size: 18px;
-         line-height: 27px;
-    }
-}
- @media (max-width: 768px) {
-     .resumeCV blockquote {
-         width: 75%;
-         display: inline-block;
-    }
-}
- @media (max-width: 320px) {
-     .resumeCV blockquote {
-         width: 100%;
-         font-size: 18px;
-    }
-}
- .resumeCV blockquote:before {
-     content: '\201c';
-     font-weight: 100;
-     position: absolute;
-}
- @media (max-width: 480px) {
-     .resumeCV blockquote:before {
-         display: none;
-    }
-}
- @media (min-width: 768px) {
-     .resumeCV blockquote:before {
-         font-size: 250%;
-         -webkit-transform: translate(-150%, 50%);
-         -moz-transform: translate(-150%, 50%);
-         -ms-transform: translate(-150%, 50%);
-         -o-transform: translate(-150%, 50%);
-         transform: translate(-150%, 50%);
-    }
-}
- .resumeCV blockquote:after {
-     content: '\201d';
-     font-weight: 100;
-     position: absolute;
-}
- @media (max-width: 480px) {
-     .resumeCV blockquote:after {
-         display: none;
-    }
-}
- @media (min-width: 768px) {
-     .resumeCV blockquote:after {
-         font-size: 250%;
-         -webkit-transform: translate(50%, 50%);
-         -moz-transform: translate(50%, 50%);
-         -ms-transform: translate(50%, 50%);
-         -o-transform: translate(50%, 50%);
-         transform: translate(50%, 50%);
-    }
-}
+
 
 .separator {
 	background: url(../img/blog-separator.png) 50% 100% no-repeat;
@@ -586,187 +531,187 @@ header {
 .information-item:hover h3 {
 	text-shadow: 0px 0px 4px #383838;
 }
- .information-item:hover .information-p {
-     color: #9d9280;
+.information-item:hover .information-p {
+    color: #9d9280;
 }
- .information-item-hierarchy .item-name-caption {
-     background-color: #000000;
-     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-     top: 0;
-     border-radius: 0px;
-     left: 0;
-     display: none;
+.information-item-hierarchy .item-name-caption {
+    background-color: #000000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    top: 0;
+    border-radius: 0px;
+    left: 0;
+    display: none;
 }
- .information-item-hierarchy:hover .information-img {
-     opacity: 1;
-     border: 1px solid #9d9280;
-     box-shadow: 0px 0px 25px 0px #37271b;
+.information-item-hierarchy:hover .information-img {
+    opacity: 1;
+    border: 1px solid #9d9280;
+    box-shadow: 0px 0px 25px 0px #37271b;
 }
- .information-item-hierarchy:hover h3 {
-     text-shadow: 0px 0px 4px #383838;
+.information-item-hierarchy:hover h3 {
+    text-shadow: 0px 0px 4px #383838;
 }
- .information-item-hierarchy:hover .information-p {
-     color: #9d9280;
+.information-item-hierarchy:hover .information-p {
+    color: #9d9280;
 }
- .information-item-perks .item-name-caption {
-     background-color: #000000;
-     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-     top: 0;
-     border-radius: 0px;
-     left: 0;
-     display: none;
+.information-item-perks .item-name-caption {
+    background-color: #000000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    top: 0;
+    border-radius: 0px;
+    left: 0;
+    display: none;
 }
- .information-item-perks:hover .information-img {
-     opacity: 1;
-     border: 1px solid #9d9280;
-     box-shadow: 0px 0px 25px 0px #37271b;
+.information-item-perks:hover .information-img {
+    opacity: 1;
+    border: 1px solid #9d9280;
+    box-shadow: 0px 0px 25px 0px #37271b;
 }
- .information-item-perks:hover h3 {
-     text-shadow: 0px 0px 4px #383838;
+.information-item-perks:hover h3 {
+    text-shadow: 0px 0px 4px #383838;
 }
- .information-item-perks:hover .information-p {
-     color: #9d9280;
+.information-item-perks:hover .information-p {
+    color: #9d9280;
 }
- .information-p {
-     font-family: Helvetica, Arial, sans-serif;
-     color: #71675b;
-     font-size: 0.85em;
-     text-align: left;
-     transition: all 0.5s;
-     font-weight: 400;
-     line-height: 1.4rem;
+.information-p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #71675b;
+    font-size: 0.85em;
+    text-align: left;
+    transition: all 0.5s;
+    font-weight: 400;
+    line-height: 1.4rem;
 }
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-     .information-p {
-         font-size: 0.8em;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    .information-p {
+        font-size: 0.8em;
     }
 }
- @media (max-width: 320px) {
-     .information-p {
-         font-size: 0.9rem;
+@media (max-width: 320px) {
+    .information-p {
+        font-size: 0.9rem;
     }
 }
 
 /* Experience section */
 .experience {
-     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(../img/earth.png);
-     background-size: cover;
-     background-position: center center;
-     box-shadow: inset 0 -10px 50px #000000;
-     color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.25)), url(../img/earth.png);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 -10px 50px #000000;
+    color: #ffffff;
 }
- @media (max-width: 768px) {
-     .experience section {
-         text-align: center;
+@media (max-width: 768px) {
+    .experience section {
+        text-align: center;
     }
 }
- @media (min-width: 1200px) {
-     .experience {
-         background-attachment: fixed;
+@media (min-width: 1200px) {
+    .experience {
+        background-attachment: fixed;
     }
 }
- .experience cite {
-     display: block;
-     margin-top: 10px;
-     text-align: center;
+.experience cite {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
 }
- .experience cite img {
-     margin: 15px 15px 0 0;
-     border: 1px solid #752b1a;
-     height: auto;
-     width: 50%;
-     display: inline-block;
-     box-shadow: 0 0 10px #000000;
+.experience cite img {
+    margin: 15px 15px 0 0;
+    border: 1px solid #752b1a;
+    height: auto;
+    width: 50%;
+    display: inline-block;
+    box-shadow: 0 0 10px #000000;
 }
- .experience p {
-     color: #ecd19a;
-     font-size: 16px;
-     height: 32px;
-     line-height: 32px;
-     text-transform: uppercase;
-     font-family: Helvetica, Arial, sans-serif;
-     text-align: center;
+.experience p {
+    color: #ecd19a;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
 }
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-     .experience p {
-         font-size: 18px;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    .experience p {
+        font-size: 18px;
     }
 }
- @media (min-width: 768px) {
-     .experience p {
-         font-size: 18px;
+@media (min-width: 768px) {
+    .experience p {
+        font-size: 18px;
     }
 }
- @media (max-width: 320px) {
-     .experience p {
-         font-size: 16px;
+@media (max-width: 320px) {
+    .experience p {
+        font-size: 16px;
     }
 }
- .experience blockquote {
-     border: none;
-     color: #fffcd9;
-     font-family: "Palatino Light", Times, Times New Roman, Georgia, serif;
-     font-size: 20px;
-     line-height: 30px;
-     margin-top: 1rem;
-     text-align: center;
+.experience blockquote {
+    border: none;
+    color: #fffcd9;
+    font-family: "Palatino Light", Times, Times New Roman, Georgia, serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 1rem;
+    text-align: center;
 }
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
-     .experience blockquote {
-         font-size: 18px;
-         line-height: 27px;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
+    .experience blockquote {
+        font-size: 18px;
+        line-height: 27px;
     }
 }
- @media (max-width: 768px) {
-     .experience blockquote {
-         width: 75%;
-         display: inline-block;
+@media (max-width: 768px) {
+    .experience blockquote {
+        width: 75%;
+        display: inline-block;
     }
 }
- @media (max-width: 320px) {
-     .experience blockquote {
-         width: 100%;
-         font-size: 18px;
+@media (max-width: 320px) {
+    .experience blockquote {
+        width: 100%;
+        font-size: 18px;
     }
 }
- .experience blockquote:before {
-     content: '\201c';
-     font-weight: 100;
-     position: absolute;
+.experience blockquote:before {
+    content: '\201c';
+    font-weight: 100;
+    position: absolute;
 }
  @media (max-width: 480px) {
-     .experience blockquote:before {
-         display: none;
+    .experience blockquote:before {
+        display: none;
     }
 }
  @media (min-width: 768px) {
-     .experience blockquote:before {
-         font-size: 250%;
-         -webkit-transform: translate(-150%, 50%);
-         -moz-transform: translate(-150%, 50%);
-         -ms-transform: translate(-150%, 50%);
-         -o-transform: translate(-150%, 50%);
-         transform: translate(-150%, 50%);
+    .experience blockquote:before {
+        font-size: 250%;
+        -webkit-transform: translate(-150%, 50%);
+        -moz-transform: translate(-150%, 50%);
+        -ms-transform: translate(-150%, 50%);
+        -o-transform: translate(-150%, 50%);
+        transform: translate(-150%, 50%);
     }
 }
- .experience blockquote:after {
-     content: '\201d';
-     font-weight: 100;
-     position: absolute;
+.experience blockquote:after {
+    content: '\201d';
+    font-weight: 100;
+    position: absolute;
 }
  @media (max-width: 480px) {
-     .experience blockquote:after {
-         display: none;
+    .experience blockquote:after {
+        display: none;
     }
 }
  @media (min-width: 768px) {
-     .experience blockquote:after {
-         font-size: 250%;
-         -webkit-transform: translate(50%, 50%);
-         -moz-transform: translate(50%, 50%);
-         -ms-transform: translate(50%, 50%);
-         -o-transform: translate(50%, 50%);
-         transform: translate(50%, 50%);
+	.experience blockquote:after {
+		font-size: 250%;
+		-webkit-transform: translate(50%, 50%);
+		-moz-transform: translate(50%, 50%);
+		-ms-transform: translate(50%, 50%);
+		-o-transform: translate(50%, 50%);
+		transform: translate(50%, 50%);
     }
 }
 
@@ -787,7 +732,8 @@ header {
 }
 
 .features {
-  padding-top: 20px; }
+	padding-top: 20px; 
+}
 
 .features-img {
 	width: 100%;
